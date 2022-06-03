@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recent</string>
+    <string name="label_new_World">Brave New\nWorld</string>
+    <string name="description_new_world">The novel opens in the World State\ncity of London in AF (After Ford)\n632 (AD 2540 in the Gregorian...</string>
+    <string name="jane_eyre">Jane Eyre</string>
+    <string name="description_jane_eyre">The novel follows the story of\nJane, a seemingly plain and simple\ngirl as she battles through life\nstruggles. Jane has many\nobstacles in her life - her cruel...</string>
+    <string name="little_women">Little Women</string>
+    <string name="description_little_women">The story follows the lives of the\nfour March sisters—Meg, Jo, Beth,\nand Amy—and details their\npassage from childhood to\nwomanhood. It is loosely based...</string>
+</resources>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/margin8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15dp"
+        android:layout_marginStart="@dimen/margin10dp"
+        android:layout_marginEnd="@dimen/margin10dp"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/new_word_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin26dp"
+            android:layout_marginTop="@dimen/margin11dp"
+            android:layout_marginBottom="@dimen/margin15dp"
+            android:src="@drawable/new_world"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_new_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin11dp"
+            android:layout_marginTop="@dimen/margin0dp"
+            android:text="@string/label_new_World"
+            style="@style/Title"
+            app:layout_constraintStart_toEndOf="@+id/new_word_image"
+            app:layout_constraintTop_toTopOf="@+id/new_word_image" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_1"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/label_new_world" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_2"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_3"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_2" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_new_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin0dp"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:text="@string/description_new_world"
+            style="@style/Description"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/label_new_world"
+            app:layout_constraintTop_toBottomOf="@+id/label_new_world" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="@dimen/margin15dp"
+            android:src="@drawable/procent"
+            android:elevation="10dp"
+            app:layout_constraintStart_toStartOf="@id/text_new_world"
+            app:layout_constraintTop_toBottomOf="@id/text_new_world" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin23dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/star"
+            android:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/rating"
+            app:layout_constraintTop_toBottomOf="@id/text_new_world" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin23dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:src="@drawable/can"
+            android:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/star"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/text_new_world" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15dp"
+        android:layout_marginStart="@dimen/margin10dp"
+        android:layout_marginEnd="@dimen/margin10dp"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/jane_eyre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin26dp"
+            android:layout_marginTop="@dimen/margin11dp"
+            android:layout_marginBottom="@dimen/margin15dp"
+            android:src="@drawable/jane_eyre"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_jane_eyre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin11dp"
+            android:layout_marginTop="@dimen/margin0dp"
+            android:text="@string/jane_eyre"
+            style="@style/Title"
+            app:layout_constraintStart_toEndOf="@+id/jane_eyre"
+            app:layout_constraintTop_toTopOf="@+id/jane_eyre" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_4"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/jane_eyre" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_5"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_4" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_6"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_jane_eyre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin0dp"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:text="@string/description_jane_eyre"
+            style="@style/Description"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/label_jane_eyre"
+            app:layout_constraintTop_toBottomOf="@+id/label_jane_eyre" />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/rating_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="@dimen/margin15dp"
+            android:src="@drawable/procent5"
+            android:elevation="10dp"
+            app:layout_constraintStart_toStartOf="@id/text_jane_eyre"
+            app:layout_constraintTop_toBottomOf="@id/text_jane_eyre" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/star_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin23dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/star"
+            android:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/rating_1"
+            app:layout_constraintTop_toBottomOf="@id/text_jane_eyre" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/can_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin23dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:src="@drawable/can"
+            android:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/star_1"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/text_jane_eyre" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin10dp"
+        android:layout_marginTop="@dimen/margin15dp"
+        android:layout_marginEnd="@dimen/margin10dp"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/new_little_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin26dp"
+            android:layout_marginTop="@dimen/margin11dp"
+            android:layout_marginBottom="@dimen/margin15dp"
+            android:src="@drawable/little_women"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label_little_women"
+            style="@style/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin11dp"
+            android:layout_marginTop="@dimen/margin0dp"
+            android:text="@string/little_women"
+            app:layout_constraintStart_toEndOf="@+id/new_little_women"
+            app:layout_constraintTop_toTopOf="@+id/new_little_women" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_7"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/new_little_women" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_8"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_7" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ellipse_9"
+            android:layout_width="@dimen/margin6dp"
+            android:layout_height="@dimen/margin6dp"
+            android:layout_marginEnd="@dimen/margin29dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ellipse_8" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_litel_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin0dp"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:text="@string/description_little_women"
+            style="@style/Description"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/label_little_women"
+            app:layout_constraintTop_toBottomOf="@+id/label_little_women" />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/rating_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="@dimen/margin15dp"
+            android:src="@drawable/procent50"
+            android:elevation="10dp"
+            app:layout_constraintStart_toStartOf="@id/text_litel_women"
+            app:layout_constraintTop_toBottomOf="@id/text_litel_women" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/star_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin23dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/star"
+            android:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/rating_2"
+            app:layout_constraintTop_toBottomOf="@id/text_litel_women" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/can_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin23dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:src="@drawable/can"
+            android:elevation="10dp"
+            app:layout_constraintStart_toEndOf="@id/star_2"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/text_litel_women" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
